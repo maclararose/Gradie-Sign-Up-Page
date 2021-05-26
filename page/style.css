@@ -1,0 +1,61 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url('./Assets/Background.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.first{
+  background-color: #003142;
+}
+
+.second{
+  background-color: #FFF;
+}
+
+.gradie-title{
+  color: #FFF;
+  text-align: center;
+  margin: 10px;
+}
+
+.login-title{
+  text-align: start;
+  margin: 10px;
+}
+
+.legend{
+  color: rgb(194, 191, 191);
+  text-align: center;
+}
+
+.gradie img{
+  width: 250px;
+  margin: auto auto 0 auto;
+}
+
+input{
+  margin: 10px;
+  align-self: center;
+}
+
+img{
+  max-width: 100%;
+  display: block;
+}
+
+label{
+  margin: 10px;
+}
