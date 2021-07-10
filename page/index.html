@@ -5,27 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style.css">
     
     <title>Sing up</title>
   </head>
   <body>
-    <div class="container">
-      <div class="first">
-        <h3 class="gradie-title">Gradie</h3>
-        <p class="legend">Beautiful gradients in seconds</p>
-        <img src="./Assets/iPhone Mockup.png" alt="iPhone" class="iphone" media="print"/>
+    <div class="signin">
+      <div class="signin__header">
+        <div class="signin__title">Gradie</div>
+        <div class="signin__subtitle">Beautiful gradients in seconds.</div>
       </div>
-      <div class="second">
-        <h3 class="login-title">Login</h3>
-        <label>Email</label>
-        <br/>
-        <input type="email" />
-        <br/>
-        <label>Password</label>
-        <br/>
-        <input type="password" />
+      
+      <div class="signin__form">
+        <div class="signin__title signin__title--normal">Login</div>
+        <div class="signin__formgroup">
+          <div class="signin__formfield">
+            <label for="email" class="signin__label">Email</label>
+            <input name="email" 
+            type="email" 
+            placeholder="john@example.com" 
+            class="signin__field" 
+            tabindex="1"/>
+            <div class="signin__formfield">
+              <label for="password" class="signin__label">Password</label>
+              <input name="password" 
+              type="password" 
+              placeholder="At least 8 characters." 
+              class="signin__field" 
+              tabindex="2"/>
+            </div>
+
+            <div class="signin__formfield signin__formfield--checkbox">
+              <label for="agreement" class="signin__label signin__label--checkbox">
+                <input name="agreement" 
+                type="checkbox" 
+                class="signin__field" 
+                tabindex="3"/>
+                By creating an account you agree with the <a class="signin__terms" href="#">Terms & Conditions.</a>
+              </label>
+            </div>
+
+            <div class="signin__actions">
+              <button class="signin__button">
+                Create an Account
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
   </body>
 </html>
